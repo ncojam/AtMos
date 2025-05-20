@@ -48,7 +48,7 @@ A detailed guide to the sound structure can be found in [SOUNDS_README.md](SOUND
 
 - Biome-based ambient sounds (day/night)
 - Ambient sounds in specific locations
-to do:
+### to do:
 - Time-of-day dependent sounds in custom locations
 - Player position detection (in a house, cave, sky, underwater, etc.)
 - Commands
