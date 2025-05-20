@@ -68,4 +68,4 @@ Currently maintained solely by me
 
 ## 📋 License
 
-This project is licensed under [WTFPLv2 with a disclaimer of liability]. See the [LICENSE](./LICENSE) file for details.
+This project is licensed under [WTFPLv2 with a disclaimer of liability]. See the [LICENSE](./LICENSE.md) file for details.
