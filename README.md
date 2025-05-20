@@ -3,7 +3,7 @@
 A Minecraft plugin for atmospheric sounds
 
 This plugin adds ambient sounds to Minecraft, similar to what the MAtmos mod does.
-It supports Paper servers (and forks) starting from Minecraft 1.20.4.
+It supports Paper servers (and forks).
 
 ## 🌸 Why this project?
 
