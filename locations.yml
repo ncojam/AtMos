@@ -1,0 +1,12 @@
+locations:
+  - world: world
+    x: 1360
+    y: 97
+    z: 173
+    radius: 16
+    daySounds:
+      - minecraft:ambience/castle
+    nightSounds:
+      - minecraft:ambience/castle
+    rainSounds:
+      - minecraft:ambience/castle

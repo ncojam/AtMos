@@ -1,0 +1,196 @@
+biomes:
+  PLAINS:
+    day: [minecraft:ambience/biome.plain.day.bird]
+    night: [minecraft:ambience/biome.plain.night.cricket]
+  DESERT:
+    day: [minecraft:ambience/biome.desert.day.ambiant]
+    night: [minecraft:ambience/biome.desert.night.ambiant]
+  FOREST:
+    day: [minecraft:ambience/biome.forest.day.bird]
+    night: [minecraft:ambience/biome.forest.night.ambiant]
+  FLOWER_FOREST:
+    day: [minecraft:ambience/biome.plain.day.bird]
+    night: [minecraft:ambience/biome.plain.night.cricket]
+  BADLANDS:
+    day: [minecraft:ambience/biome.desert.day.ambiant]
+    night: [minecraft:ambience/biome.desert.night.ambiant]
+  BAMBOO_JUNGLE:
+    day: [minecraft:ambience/biome.jungle.day.ambiant]
+    night: [minecraft:ambience/biome.jungle.night.ambiant]
+  BASALT_DELTAS:
+    day: [minecraft:ambience/biome.nether.ambiant]
+    night: [minecraft:ambience/biome.nether.ambiant]
+  BEACH:
+    day: [minecraft:ambience/seagulls, minecraft:ambience/block.water.waterfall]
+    night: [minecraft:ambience/seagulls, minecraft:ambience/block.water.waterfall]
+  BIRCH_FOREST:
+    day: [minecraft:ambience/biome.plain.day.bird]
+    night: [minecraft:ambience/biome.plain.night.cricket]
+  CHERRY_GROVE:
+    day: [minecraft:ambience/sakura]
+    night: [minecraft:ambience/sakura]
+  COLD_OCEAN:
+    day: [minecraft:]
+    night: [minecraft:]
+  CRIMSON_FOREST:
+    day: [minecraft:ambience/biome.nether.ambiant]
+    night: [minecraft:ambience/biome.nether.ambiant]
+  DARK_FOREST:
+    day: [minecraft:ambience/biome.forest.day.bird]
+    night: [minecraft:ambience/biome.forest.night.ambiant]
+  DEEP_COLD_OCEAN:
+    day: [minecraft:]
+    night: [minecraft:]
+  DEEP_DARK:
+    day: [minecraft:]
+    night: [minecraft:]
+  DEEP_FROZEN_OCEAN:
+    day: [minecraft:]
+    night: [minecraft:]
+  DEEP_LUKEWARM_OCEAN:
+    day: [minecraft:]
+    night: [minecraft:]
+  DEEP_OCEAN:
+    day: [minecraft:]
+    night: [minecraft:]
+  DRIPSTONE_CAVES:
+    day: [minecraft:]
+    night: [minecraft:]
+  END_BARRENS:
+    day: [minecraft:]
+    night: [minecraft:]
+  END_HIGHLANDS:
+    day: [minecraft:]
+    night: [minecraft:]
+  END_MIDLANDS:
+    day: [minecraft:]
+    night: [minecraft:]
+  ERODED_BADLANDS:
+    day: [minecraft:ambience/biome.desert.day.ambiant]
+    night: [minecraft:ambience/biome.desert.night.ambiant]
+  FROZEN_OCEAN:
+    day: [minecraft:ambience/weather.wind.snowwind]
+    night: [minecraft:ambience/weather.wind.snowwind]
+  FROZEN_PEAKS:
+    day: [minecraft:ambience/weather.wind.snowwind]
+    night: [minecraft:ambience/weather.wind.snowwind]
+  FROZEN_RIVER:
+    day: [minecraft:ambience/weather.wind.snowwind]
+    night: [minecraft:ambience/weather.wind.snowwind]
+  GROVE:
+    day: [minecraft:ambience/weather.wind.snowwind]
+    night: [minecraft:ambience/weather.wind.snowwind]
+  ICE_SPIKES:
+    day: [minecraft:ambience/weather.wind.snowwind]
+    night: [minecraft:ambience/weather.wind.snowwind]
+  JAGGED_PEAKS:
+    day: [minecraft:ambience/weather.wind]
+    night: [minecraft:ambience/weather.wind]
+  JUNGLE:
+    day: [minecraft:ambience/biome.jungle.day.ambiant]
+    night: [minecraft:ambience/biome.jungle.night.ambiant]
+  LUKEWARM_OCEAN:
+    day: [minecraft:]
+    night: [minecraft:]
+  LUSH_CAVES:
+    day: [minecraft:]
+    night: [minecraft:]
+  MANGROVE_SWAMP:
+    day: [minecraft:]
+    night: [minecraft:]
+  MEADOW:
+    day: [minecraft:ambience/biome.plain.day.bird]
+    night: [minecraft:ambience/biome.plain.night.cricket]
+  MUSHROOM_FIELDS:
+    day: [minecraft:]
+    night: [minecraft:]
+  NETHER_WASTES:
+    day: [minecraft:ambience/biome.nether.ambiant]
+    night: [minecraft:ambience/biome.nether.ambiant]
+  OCEAN:
+    day: [minecraft:]
+    night: [minecraft:]
+  OLD_GROWTH_BIRCH_FOREST:
+    day: [minecraft:ambience/biome.forest.day.bird]
+    night: [minecraft:ambience/biome.forest.night.ambiant]
+  OLD_GROWTH_PINE_TAIGA:
+    day: [minecraft:ambience/weather.wind.snowwind]
+    night: [minecraft:ambience/weather.wind.snowwind]
+  OLD_GROWTH_SPRUCE_TAIGA:
+    day: [minecraft:]
+    night: [minecraft:]
+  PALE_GARDEN:
+    day: [minecraft:]
+    night: [minecraft:]
+  RIVER:
+    day: [minecraft:ambience/block.water.waterfall]
+    night: [minecraft:ambience/block.water.waterfall]
+  SAVANNA:
+    day: [minecraft:ambience/biome.desert.day.ambiant]
+    night: [minecraft:ambience/biome.desert.night.ambiant]
+  SAVANNA_PLATEAU:
+    day: [minecraft:ambience/biome.desert.day.ambiant]
+    night: [minecraft:ambience/biome.desert.night.ambiant]
+  SMALL_END_ISLANDS:
+    day: [minecraft:]
+    night: [minecraft:]
+  SNOWY_BEACH:
+    day: [minecraft:ambience/weather.wind.snowwind]
+    night: [minecraft:ambience/weather.wind.snowwind]
+  SNOWY_PLAINS:
+    day: [minecraft:ambience/weather.wind.snowwind]
+    night: [minecraft:ambience/weather.wind.snowwind]
+  SNOWY_SLOPES:
+    day: [minecraft:ambience/weather.wind.snowwind]
+    night: [minecraft:ambience/weather.wind.snowwind]
+  SNOWY_TAIGA:
+    day: [minecraft:ambience/weather.wind.snowwind, minecraft:ambience/biome.forest.day.bird]
+    night: [minecraft:ambience/weather.wind.snowwind, minecraft:ambience/biome.forest.night.ambiant]
+  SOUL_SAND_VALLEY:
+    day: [minecraft:ambience/biome.nether.ambiant]
+    night: [minecraft:ambience/biome.nether.ambiant]
+  SPARSE_JUNGLE:
+    day: [minecraft:ambience/biome.jungle.day.ambiant, minecraft:ambience/biome.plain.day.bird]
+    night: [minecraft:ambience/biome.jungle.night.ambiant, minecraft:ambience/biome.plain.night.cricket]
+  STONY_PEAKS:
+    day: [minecraft:ambience/weather.wind.wind]
+    night: [minecraft:ambience/weather.wind.wind]
+  STONY_SHORE:
+    day: [minecraft:]
+    night: [minecraft:]
+  SUNFLOWER_PLAINS:
+    day: [minecraft:ambience/biome.plain.day.bird]
+    night: [minecraft:ambience/biome.plain.night.cricket]
+  SWAMP:
+    day: [minecraft:]
+    night: [minecraft:]
+  TAIGA:
+    day: [minecraft:ambience/biome.forest.day.bird]
+    night: [minecraft:ambience/biome.forest.night.ambiant]
+  THE_END:
+    day: [minecraft:]
+    night: [minecraft:]
+  THE_VOID:
+    day: [minecraft:]
+    night: [minecraft:]
+  WARM_OCEAN:
+    day: [minecraft:]
+    night: [minecraft:]
+  WARPED_FOREST:
+    day: [minecraft:ambience/biome.nether.ambiant]
+    night: [minecraft:ambience/biome.nether.ambiant]
+  WINDSWEPT_FOREST:
+    day: [minecraft:ambience/weather.wind.wind, minecraft:ambience/biome.forest.day.bird]
+    night: [minecraft:ambience/weather.wind.wind, minecraft:ambience/biome.forest.night.ambiant]
+  WINDSWEPT_GRAVELLY_HILLS:
+    day: [minecraft:ambience/weather.wind.wind]
+    night: [minecraft:ambience/weather.wind.wind]
+  WINDSWEPT_HILLS:
+    day: [minecraft:ambience/weather.wind.wind]
+    night: [minecraft:ambience/weather.wind.wind]
+  WINDSWEPT_SAVANNA:
+    day: [minecraft:ambience/weather.wind.wind, minecraft:ambience/biome.desert.day.ambiant]
+    night: [minecraft:ambience/weather.wind.wind, minecraft:ambience/biome.desert.night.ambiant]
+  WOODED_BADLANDS:
+    day: [minecraft:ambience/biome.desert.day.ambiant]
+    night: [minecraft:ambience/biome.desert.night.ambiant]

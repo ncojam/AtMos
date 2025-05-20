@@ -1,0 +1,9 @@
+name: AtMos
+version: 0.1
+main: me.cojam.atmos.AtMos
+api-version: 1.19
+description: "Atmospheric sounds for server"
+commands:
+  atmosplay:
+    description: "play test sound"
+    usage: "/atmosplay"

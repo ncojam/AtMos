@@ -1,0 +1,14 @@
+name: AtMos
+version: 0.3
+main: me.cojam.atmos.AtMos
+api-version: 1.19
+description: "Atmospheric sounds for server"
+commands:
+  soundtoggle:
+    description: Toggle AtMos messages
+    usage: /soundtoggle
+    aliases: [soundtoggle, showmsg]
+permissions:
+  atmos.toggle:
+    description: Allows to toggle messages
+    default: true
