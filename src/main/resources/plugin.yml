@@ -1,5 +1,5 @@
 name: AtMos
-version: 0.1
+version: ${project.version}
 main: me.cojam.atmos.AtMos
 api-version: 1.19
 description: "Atmospheric sounds for server"
@@ -7,3 +7,6 @@ commands:
   atmosplay:
     description: "play test sound"
     usage: "/atmosplay"
+  atmosvol:
+    description: "Set volume for atmospheric sounds"
+    usage: "/atmosvol <float>"

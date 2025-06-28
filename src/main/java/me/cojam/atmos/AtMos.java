@@ -17,6 +17,7 @@ public class AtMos extends JavaPlugin {
 	private final List<SoundLocation> soundLocations = new ArrayList<>();
 	private String debugMessage;
 	private BiomeSoundManager biomeSoundManager;
+	private VolumeManager volumeManager;
 
 	@Override
 	public void onEnable() {
@@ -30,6 +31,31 @@ public class AtMos extends JavaPlugin {
 		}
 		startSoundChecker();
 		getLogger().info("AtMos включён.");
+		
+		volumeManager = new VolumeManager(getDataFolder());
+		getCommand("atmosvol").setExecutor((sender, command, label, args) -> {
+			if (!(sender instanceof Player player)) {
+				sender.sendMessage("§cТолько игрок может использовать эту команду.");
+				return true;
+			}
+			if (args.length != 1) {
+				player.sendMessage("§cИспользование: /atmosvol <громкость от 0.0 до 1.0>");
+				return true;
+			}
+			try {
+				float vol = Float.parseFloat(args[0]);
+				if (vol < 0.0f || vol > 1.0f) {
+					player.sendMessage("§cГромкость должна быть от 0.0 до 1.0");
+					return true;
+				}
+				volumeManager.setVolume(player, vol);
+				player.sendMessage("§aГромкость установлена на: " + vol);
+			} catch (NumberFormatException e) {
+				player.sendMessage("§cНекорректное число.");
+			}
+			return true;
+		});
+
 	}
 
 	@Override
@@ -111,7 +137,8 @@ public class AtMos extends JavaPlugin {
 							String sound = getAppropriateSound(sl, player, random);
 							if (sound != null) {
 								Location soundLoc = generateRandomLocation(player.getLocation(), 5);
-								player.playSound(soundLoc, sound, 1.0f, 1.0f);
+								float vol = volumeManager.getVolume(player);
+								player.playSound(soundLoc, sound, vol, 1.0f);
 							}
 							found = true;
 							break;
@@ -127,7 +154,8 @@ public class AtMos extends JavaPlugin {
 						String fallbackSound = biomeSoundManager.getSound(biomeName, isNight, random);
 						if (fallbackSound != null) {
 							Location soundLoc = generateRandomLocation(player.getLocation(), 5);
-							player.playSound(soundLoc, fallbackSound, 1.0f, 1.0f);
+							float vol = volumeManager.getVolume(player);
+							player.playSound(soundLoc, fallbackSound, vol, 1.0f);
 							//player.sendMessage("§7[AtMos] §cМы не в радиусе. Биом: §e" + biomeName + "§c, звук: §b" + fallbackSound);
 						}
 					}
