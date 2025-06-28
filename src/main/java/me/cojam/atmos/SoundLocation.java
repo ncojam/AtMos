@@ -1,5 +1,8 @@
 package me.cojam.atmos;
 
+import org.bukkit.Bukkit;
+import org.bukkit.Location;
+import org.bukkit.World;
 import java.util.List;
 
 public class SoundLocation {
@@ -8,6 +11,7 @@ public class SoundLocation {
     public final List<String> daySounds;
     public final List<String> nightSounds;
     public final List<String> rainSounds;
+	public final Location location;
 
     public SoundLocation(String world, Object x, Object y, Object z, Object radius,
                          List<String> daySounds, List<String> nightSounds, List<String> rainSounds) {
@@ -31,6 +35,10 @@ public class SoundLocation {
         this.daySounds = daySounds != null ? daySounds : List.of();
         this.nightSounds = nightSounds != null ? nightSounds : List.of();
         this.rainSounds = rainSounds != null ? rainSounds : List.of();
+		
+		World w = Bukkit.getWorld(world);
+		if (w == null) throw new IllegalArgumentException("World not found: " + world);
+		this.location = new Location(w, this.x, this.y, this.z);
     }
 
     // Опционально: Добавить геттеры и другие полезные методы

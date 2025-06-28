@@ -116,7 +116,7 @@ public class AtMos extends JavaPlugin {
 							continue;
 						}
 
-						Location loc = new Location(player.getWorld(), sl.x, sl.y, sl.z);
+						Location loc = sl.location;
 						//getLogger().info("Sound location: " + loc.toString()); // Сообщение с координатами локации
 
 						 //Собираем информацию для отладки
@@ -172,7 +172,7 @@ public class AtMos extends JavaPlugin {
 					for (SoundLocation sl : soundLocations) {
 						if (!player.getWorld().getName().equals(sl.world)) continue;
 
-						Location loc = new Location(player.getWorld(), sl.x, sl.y, sl.z);
+						Location loc = sl.location;
 						if (player.getLocation().distance(loc) <= sl.radius) {
 							inZone = true;
 							break;
